@@ -1,0 +1,48 @@
+$primary-color: #3f78c9;
+$secondary-color: #746185;
+$youtube: #ff0000;
+
+$offwhite: #d0d0d0;
+$mid: #5d6063;
+$offblack: #282828;
+
+$lighten-2: 15;
+$lighten: 5;
+$darken: 5;
+$darken-2: 25;
+
+$colors: (
+    primary: (
+        base: $primary-color,
+        light-2: lighten($primary-color, $lighten-2),
+        light: lighten($primary-color, $lighten),
+        dark: darken($primary-color, $darken),
+        dark-2: darken($primary-color, $darken-2),
+    ),
+    secondary: (
+        base: $secondary-color,
+        light-2: lighten($secondary-color, $lighten-2),
+        light: lighten($secondary-color, $lighten),
+        dark: darken($secondary-color, $darken),
+        dark-2: darken($secondary-color, $darken-2),
+    ),
+    yt: (
+        base: $youtube,
+        light-2: lighten($youtube, $lighten-2),
+        light: lighten($youtube, $lighten),
+        dark: darken($youtube, $darken),
+        dark-2: darken($youtube, $darken-2),
+    ),
+    neutral: (
+        base: $mid,
+        light-2: lighten($offwhite, $lighten-2),
+        light: $offwhite,
+        dark: $offblack,
+        dark-2: darken($offblack, $darken-2),
+    ),
+);
+
+@function clr($base, $shade: base) {
+    $color: map-get(map-get($colors, $base), $shade);
+    @return $color;
+}
