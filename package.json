@@ -14,7 +14,7 @@
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.rtl*.css\" \"!dist/css/*.min.css\"",
     "css-minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*rtl*.css\"",
     "web-watch": "parcel watch web/index.html --out-dir dist/web --cache-dir .parcel-cache",
-    "web-build": "parcel build web/index.html --out-dir dist/web --cache-dir .parcel-cache",
+    "web-build": "parcel build web/index.html --out-dir dist/web --cache-dir .parcel-cache"
   },
   "repository": {
     "type": "git",
