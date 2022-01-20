@@ -1,7 +1,7 @@
 {
-  "name": "css-framework",
+  "name": "geyser",
   "version": "1.0.0",
-  "description": "A light-weight custom css (scss) framework for my own projects",
+  "description": "A light-weight custom css (scss) and js framework for my own projects",
   "main": "index.js",
   "scripts": {
     "css-watch-and-lint": "echo \"You may need to install 'npm-run-all' globally\" && nodemon --watch scss/ --ext scss --exec \"npm-run-all css-lint css-compile css-prefix\"",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LordFarquhar/css-framework.git"
+    "url": "git+https://github.com/LordFarquhar/geyser.git"
   },
   "keywords": [
     "css",
@@ -26,14 +26,15 @@
     "mobile-first",
     "frontend",
     "web",
-    "design"
+    "design",
+    "framework"
   ],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LordFarquhar/css-framework/issues"
+    "url": "https://github.com/LordFarquhar/geyser/issues"
   },
-  "homepage": "https://github.com/LordFarquhar/css-framework#readme",
+  "homepage": "https://github.com/LordFarquhar/geyser#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "clean-css-cli": "^5.5.0",
